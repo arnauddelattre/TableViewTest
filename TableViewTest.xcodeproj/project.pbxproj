@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04B00F7615774D9F002B754C /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B00F7515774D9F002B754C /* Event.m */; };
 		04F2B005157747240030FB04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F2B004157747240030FB04 /* UIKit.framework */; };
 		04F2B007157747240030FB04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F2B006157747240030FB04 /* Foundation.framework */; };
 		04F2B009157747240030FB04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F2B008157747240030FB04 /* CoreGraphics.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04B00F7415774D9F002B754C /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		04B00F7515774D9F002B754C /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		04F2B000157747240030FB04 /* TableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F2B004157747240030FB04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04F2B006157747240030FB04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +100,8 @@
 				04F2B021157747240030FB04 /* MasterViewController.xib */,
 				04F2B024157747240030FB04 /* DetailViewController.xib */,
 				04F2B018157747240030FB04 /* TableViewTest.xcdatamodeld */,
+				04B00F7415774D9F002B754C /* Event.h */,
+				04B00F7515774D9F002B754C /* Event.m */,
 				04F2B00D157747240030FB04 /* Supporting Files */,
 			);
 			path = TableViewTest;
@@ -182,6 +187,7 @@
 				04F2B01A157747240030FB04 /* TableViewTest.xcdatamodeld in Sources */,
 				04F2B01D157747240030FB04 /* MasterViewController.m in Sources */,
 				04F2B020157747240030FB04 /* DetailViewController.m in Sources */,
+				04B00F7615774D9F002B754C /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +309,7 @@
 				04F2B02B157747240030FB04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

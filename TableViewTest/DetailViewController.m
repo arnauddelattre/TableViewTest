@@ -7,6 +7,8 @@
 //
 
 #import "DetailViewController.h"
+#import "Event.h"
+#import "AppDelegate.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -41,6 +43,7 @@
 
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
+        NSLog(@"detailItem : %@", self.detailItem);
     }
 }
 
@@ -115,6 +118,21 @@
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
+}
+
+- (IBAction)didTouchLogicalDeletion:(id)sender {
+    Event * event = (Event *) self.detailItem;
+    event.deleted = [NSNumber numberWithBool:TRUE];
+        
+    AppDelegate * appDelegate = [UIApplication sharedApplication].delegate;
+    NSManagedObjectContext * context = appDelegate.managedObjectContext;
+    
+    NSError * error;
+    if(![context save:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+    
 }
 
 @end
