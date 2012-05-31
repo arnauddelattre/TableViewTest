@@ -126,7 +126,7 @@
         
     AppDelegate * appDelegate = [UIApplication sharedApplication].delegate;
     NSManagedObjectContext * context = appDelegate.managedObjectContext;
-    
+    NSLog(@"1)Context : %@", context);
     NSError * error;
     if(![context save:&error]) {
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
